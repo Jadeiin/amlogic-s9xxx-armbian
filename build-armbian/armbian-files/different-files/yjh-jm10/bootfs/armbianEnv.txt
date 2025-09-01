@@ -1,6 +1,6 @@
 verbosity=9
 bootlogo=true
-fdtfile=rockchip/yjh-jm10.dtb
+fdtfile=rockchip/rk3588-yjh-jm10.dtb
 rootdev=/dev/mmcblk0p2
 rootfstype=ext4
 rootflags=compress=zstd:6
