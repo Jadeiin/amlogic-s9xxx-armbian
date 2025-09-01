@@ -55,8 +55,8 @@ if [[ "${FDT_FILE}" == "rk3568-swan1-w28.dtb" ]]; then
     log_message "USB power control GPIOs set for Swan1-w28."
 fi
 
-# For smart-am60(rk3588)/orangepi-5b(rk3588s) board: Bluetooth control
-if [[ "${FDT_FILE}" =~ ^(rk3588-smart-am60\.dtb|rk3588s-orangepi-5b\.dtb)$ ]]; then
+# For smart-am60(rk3588)/orangepi-5b(rk3588s)/yjh-jm10(rk3588) board: Bluetooth control
+if [[ "${FDT_FILE}" =~ ^(rk3588-smart-am60\.dtb|rk3588s-orangepi-5b\.dtb|rk3588-yjh-jm10\.dtb)$ ]]; then
     # This is a sequence of commands, with the last one running in the background.
     # The background command (&) won't affect the script's exit code.
     rfkill block all
